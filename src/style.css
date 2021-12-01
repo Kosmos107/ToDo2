@@ -1,5 +1,10 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
 body {
   margin: 0;
+  background-color: aquamarine;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.App{
+  background-color: bisque;
+  height: 100vh;
+ 
+  
+ 
+}
+.container{
+  background-color: forestgreen;
+  
+  padding: 20px 15px;
+  margin:  0 auto;
+ 
+
+  
+}
+
+.header{
+min-height: 15%;
+background-color: fuchsia;
+
+}
+.footer{
+min-height: 15%;
+background-color:indianred;
 }
