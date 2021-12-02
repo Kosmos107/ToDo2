@@ -22,12 +22,13 @@ code {
   background-color: bisque;
   height: 100vh;
  
+ 
   
  
 }
 .container{
   background-color: forestgreen;
-  
+  height: 64%; 
   padding: 20px 15px;
   margin:  0 auto;
  
