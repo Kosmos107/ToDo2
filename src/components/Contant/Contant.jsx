@@ -1,28 +1,23 @@
 
-import React,{useState} from "react"
 import {Routes,Route} from "react-router-dom"
-import { useDispatch,useSelector} from "react-redux"
 
+import ToDo from "./ToDo/ToDo"
+import s from "./Contant.module.scss"
 
 
 
 const Container =()=>{
     
-    const [count,setCount] = useState(25)
 
-    
-
-    console.log(count)
     return(
-    <div className="container">
-        <div onClick={()=>{setCount(count+1)}} style={{height:"30px",border:"5px solid red",margin:"20px"}}>
-            {count}
-        </div>
+        <div className={s.Contant__wrapper}>
         <Routes>
             <Route path="/Home" element={<div>Hello</div>} />
+            <Route path="/Todo" element={<ToDo/>} />
+            <Route path="/Home" element={<div>Hello</div>} />
         </Routes>
-
+        </div>
     
-    </div>)
+   )
 }
 export default Container

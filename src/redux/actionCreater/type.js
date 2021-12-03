@@ -1,0 +1,2 @@
+export const NEW_TODO_LIST = "NEW_TODO_LIST"
+export const NEW_TODO_ERROR = "NEW_TODO_ERROR"

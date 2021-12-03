@@ -1,0 +1,26 @@
+.Error{
+    &__wrapper{
+        position: absolute;
+        width: 100%;
+        max-width: 96%;
+        font-size: 30px;
+        color:rgb(202, 14, 14);
+        transition: all .5s ease;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        
+        
+    }
+    &__item{
+        margin: 0 auto;
+        width: 30%;
+        text-align: center;
+    }
+    &__show{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+     }
+
+}

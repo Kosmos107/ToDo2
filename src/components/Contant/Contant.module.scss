@@ -1,0 +1,99 @@
+
+.Contant{
+    &__wrapper{
+        height: 550px;
+        position: relative;
+        padding: 10px;
+    }
+    
+}
+
+
+
+.ToDo{
+    &__wrapper{
+        position: relative;
+        margin: 0 auto;
+        padding: 15px 15px 0 ;
+        max-width: 80%;
+        height: 90%;
+        ::-webkit-scrollbar { /* chrome based */
+            width: 0px;  /* ширина scrollbar'a */
+            background: transparent;  /* опционально */
+        }
+ 
+    }
+    &__Lists{
+        margin: 0 auto ;
+        max-width: 90%;
+        height: 390px;
+        overflow-y: auto;
+
+    }
+    &__input{
+        display: block;
+        width: 85%;
+        font-size: 25px;
+        padding: 10px;
+        margin: 47px auto 0;
+        outline: none;
+       
+    }
+}
+
+
+.List{
+    &__wrapper{
+        position: relative;
+        user-select: none;
+        display: flex;
+        border: 5px solid skyblue;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto 10px;
+        padding: 10px 30px 10px 8px;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    &__text{
+        display: block;
+        word-wrap: break-word;
+        margin: 0 25px;
+        max-width: 50%;
+        padding: 10px 5px;
+        font-size: 18px;
+    }
+    &__mark{
+        position: relative;
+        border: 3px solid skyblue;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+ 
+    &__delet{
+        position: absolute;
+        left: 50%;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    &__delet:checked ~ .List__mark::after{
+        content: "";
+        position: absolute;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+        background-color: skyblue;
+        top: 10%;
+        left: 9%;
+    }
+    &__delet:checked ~ *{
+        text-decoration: line-through;
+    }
+
+}
+
+

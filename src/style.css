@@ -19,29 +19,12 @@ code {
 
 
 .App{
-  background-color: bisque;
-  height: 100vh;
- 
- 
-  
- 
-}
-.container{
-  background-color: forestgreen;
-  height: 64%; 
-  padding: 20px 15px;
-  margin:  0 auto;
- 
-
-  
-}
-
-.header{
-min-height: 15%;
-background-color: fuchsia;
-
+ background-color: rgb(236, 226, 226);
+  min-height: 100vh;
 }
 .footer{
-min-height: 15%;
-background-color:indianred;
+  background-color: violet;
+   height: 100px;
 }
+ 
+  
